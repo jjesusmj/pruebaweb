@@ -30,7 +30,9 @@
             <button type="button" onclick="limpiarCampos()">Limpiar</button>
         </div>
     </form>
-
+    {% if resultado %}
+    <h2>Resultado: {{ resultado }}</h2>
+    {% endif %}
     <script>
         function limpiarCampos() {
             document.getElementById('valor_a').value = '';
